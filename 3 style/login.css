@@ -1,0 +1,141 @@
+:root {
+  --color-primeri-light: #8a50e650;
+  --color-primeri: #8950e6;
+  --color-primeri-dark: #39107a;
+  --color-title-text: #101010;
+  --color-smal-text: #515052;
+  --color-sction: #8c5dd810;
+  --color-sction-dark: #829ee9ce;
+}
+
+.login {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.login-conatiner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-image {
+  width: 50%;
+  height: 100vh;
+  padding: 8rem 6rem;
+  background-color: #9593fd;
+}
+.login-image img {
+  width: 90%;
+}
+
+/* section of from*/
+.login-form {
+  padding: 5rem 0;
+  width: 50%;
+  height: 100vh;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 1rem 0 2rem 0;
+}
+
+input {
+  font-size: 1.9rem;
+  width: 50%;
+  padding: 0.8rem 1.6rem;
+  background-color: var(--color-primeri-light);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.login-button {
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.sparited {
+  display: inline-block;
+  padding: 1rem 0;
+  font-size: 1.9rem;
+}
+
+.login-google {
+  width: 50%;
+  margin-bottom: 0.6rem;
+}
+.login-form a {
+  text-decoration-line: underline;
+  color: var(--color-primeri-dark);
+}
+.login-form a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+#error-login {
+  color: #db0909;
+  text-align: left;
+}
+
+/* m */
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 50%;
+  }
+  .login-image img {
+    width: 110%;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  html {
+    font-size: 45%;
+  }
+  .login-image img {
+    width: 117%;
+    padding-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  html {
+    font-size: 50%;
+  }
+  .header {
+    display: none;
+  }
+  .login-form {
+    padding: 11rem 0;
+    width: 100%;
+  }
+  .login-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  input {
+    width: 85%;
+  }
+  .login-button {
+    width: 85%;
+  }
+  .login-google {
+    width: 85%;
+  }
+}

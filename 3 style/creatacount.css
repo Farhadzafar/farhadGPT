@@ -1,0 +1,216 @@
+:root {
+  --color-primeri: #8950e6;
+  --color-primeri-dark: #39107a;
+  --color-title-text: #101010;
+  --color-smal-text: #515052;
+  --color-sction: #8c5dd810;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+  background-color: var(--color-sction);
+}
+
+.goback {
+  width: 5rem;
+  height: 5rem;
+  margin: 3rem 0 0 7rem;
+  color: var(--color-primeri);
+}
+.goback:hover {
+  color: var(--color-primeri-dark);
+  cursor: pointer;
+  opacity: 0.7;
+}
+.goback:active {
+  transform: translateX(-2px);
+  opacity: 1;
+}
+
+.create-coantiner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7rem;
+}
+
+.princin-list {
+  margin-top: 3.5rem;
+  width: 40%;
+  padding: 6rem 0;
+}
+.princin-list ul {
+  margin-top: 2rem;
+}
+.princin-list ul li {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  color: var(--color-smal-text);
+}
+
+.princin-list ion-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-right: 0.8rem;
+  color: var(--color-primeri-dark);
+}
+
+/* ****** form  ************** */
+
+form {
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.craete-form {
+  display: block;
+  width: 60%;
+  text-align: center;
+}
+
+.names {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.popa-btn {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  /* width: 50%; */
+  position: absolute;
+  top: 37%;
+  left: 64%;
+  /* transform: translate(-50%, 50%); */
+}
+
+.pope-button {
+  background-image: linear-gradient(to right, #fff, #fff);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.6);
+}
+.pope-button a {
+  color: var(--color-primeri-dark);
+  text-decoration: none;
+}
+
+/* media quriys */
+/* 1030 */
+@media screen and (max-width: 1030px) {
+  html {
+    font-size: 57%;
+  }
+}
+
+/* 900 */
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+  .craete-form {
+    width: 50%;
+  }
+  .princin-list {
+    width: 50%;
+  }
+  .names {
+    width: 80%;
+  }
+  .grup {
+    width: 80%;
+  }
+  .login-button {
+    width: 80%;
+  }
+  .login-google {
+    width: 80%;
+  }
+}
+
+/* 700 */
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+/* 610 */
+@media screen and (max-width: 610px) {
+  html {
+    font-size: 50%;
+  }
+  .create-coantiner {
+    flex-direction: column-reverse;
+  }
+  .craete-form {
+    width: 90%;
+  }
+  .princin-list {
+    width: 90%;
+  }
+  .names {
+    width: 80%;
+  }
+  .grup {
+    width: 80%;
+  }
+  .login-button {
+    width: 80%;
+  }
+  .login-google {
+    width: 80%;
+  }
+}
+
+/* 450 */
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+  .create-coantiner {
+    flex-direction: column-reverse;
+  }
+  .craete-form {
+    width: 100%;
+  }
+  .princin-list {
+    width: 100%;
+  }
+  .names {
+    width: 90%;
+  }
+  .grup {
+    width: 90%;
+  }
+  .login-button {
+    width: 90%;
+  }
+  .login-google {
+    width: 90%;
+  }
+}
+
+/* 365 */
+@media screen and (max-width: 365px) {
+  html {
+    font-size: 38%;
+  }
+}

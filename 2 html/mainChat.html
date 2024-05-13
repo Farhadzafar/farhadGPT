@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- links -->
+    <link
+      rel="shortcut icon"
+      href="../1 image/my_logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- mainchat style links -->
+    <link rel="stylesheet" href="../3 style/mainChat.css" />
+    <!-- loning style link -->
+    <link rel="stylesheet" href="../3 style/formGenraleStyle.css" />
+    <link rel="stylesheet" href="../3 style/login.css" />
+
+    <!-- login javaScript link -->
+    <script defer src="../4 javaScript/Login/login.js"></script>
+
+    <!-- **************************************************** -->
+    <!--javaScript link for chat app -->
+    <script defer src="../4 javaScript/Chat/main.js"></script>
+
+    <title>FarhadGPT/chat</title>
+  </head>
+
+  <body>
+    <section class="chat">
+      <header>
+        <div class="header-icon">
+          <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+          <p>FarhadGPT</p>
+        </div>
+      </header>
+
+      <div class="chat-coantiner">
+        <div class="sidebar">
+          <button>+ New chat</button>
+
+          <div class="chat-dscription">
+            <ul>
+              <li>
+                <img
+                  src="../1 image/chat/pictures-icon.svg"
+                  alt="pictures-icon"
+                />
+                AI writing code..
+              </li>
+              <li>
+                <img
+                  src="../1 image/chat/speaking-bubbles-black-icon.svg"
+                  alt="pictures-icon"
+                />
+                Salaam, how are...
+              </li>
+            </ul>
+
+            <div class="setting">
+              <ul>
+                <li id="gift">
+                  <ion-icon name="gift-outline"></ion-icon> Eron cridate
+                </li>
+                <li id="gift">
+                  <ion-icon name="diamond-outline"></ion-icon> pricing plan
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--chat area  -->
+        <div class="chat-area">
+          <div class="welecome">
+            <div class="hellow">
+              <img src="../1 image/chat/Group 1.png" alt="logo" />
+              <h2>Hollow</h2>
+              <p class="massage">How can i heep you!</p>
+            </div>
+            <div class="servise-coantiner">
+              <!-- 1 -->
+              <div class="servise-botton">
+                <img src="../1 image/chat/openai-icon.svg" alt="openAI" />
+                <p>GPT-3.5</p>
+              </div>
+              <!-- 2 -->
+              <div class="servise-botton">
+                <img src="../1 image/chat/openai-icon.svg" alt="openAI" />
+                <p>GPT-4</p>
+              </div>
+              <!-- 3 -->
+              <div class="servise-botton">
+                <img src="../1 image/chat/pictures-icon.svg" alt="openAI" />
+                <p>image generite</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="massage-area hidden">
+            <!-- <div class="massames user-massages">
+              <small class="user">FA</small>
+              <p class="user-text">
+                , how can a helpe youHi, how can, how can a helpe youHi, how
+                can, how can a helpe youHi, how can, how can a helpe youHi, how
+                can, how can a helpe youHi, how can, how can a helpe youHi, how
+                can, how can a helpe youHi, how canHican, how can a helpe youHi,
+                how can, how can a helpe youHi, how can, how can a helpe youHi,
+                how canHican, how can a helpe youHi, how can, how can a helpe
+                youHi, how can, how can a helpe youHi, how canHican, how can a
+                helpe youHi, how can, how can a helpe youHi, how can, how can a
+                helpe youHi, how canHican, how can a helpe youHi, how can, how
+                can a helpe youHi, how can, how can a helpe youHi, how canHican,
+                how can a helpe youHi, how can, how can a helpe youHi, how can,
+                how can a helpe youHi, how canHican, how can a helpe youHi, how
+                can, how can a helpe youHi, how can, how can a helpe youHi, how
+                canHican, how can a helpe youHi, how can, how can a helpe youHi,
+                how can, how can a helpe youHi, how canHican, how can a helpe
+                youHi, how can, how can a helpe youHi, how can, how can a helpe
+                youHi, how canHican, how can a helpe youHi, how can, how can a
+                helpe youHi, how can, how can a helpe youHi, how canHi
+              </p>
+            </div> -->
+            <!-- ____2____ -->
+            <!-- <div class="massames GPT-massages">
+              <img
+                src="../1 image/chat/Group 1.png"
+                alt="FarhadGPT"
+                class="AI-image"
+              />
+              <p class="AI-text">
+                Hi, how can a helpe youHi, how can a helpe youHi, how can a
+                helpe youHi, how can a helpe youHi, how can a helpe youHi, how
+                can a helpe youHi, how can a helpe youHi, how can a helpe youHi,
+                how can a helpe youHi, how can a helpe youHi, how can a helpe
+                youHi, how can a helpe youHi, how can a helpe youHi, how can a
+                helpe youHi, how can a helpe youHi, how can a helpe youHi, how
+                can a helpe youHi, how can a helpe youHi, how can a helpe youHi,
+                how can a helpe youHi, how can a helpe youHi, how can a helpe
+                youHi, how can a helpe youHi, how can a helpe youHi, how can a
+                helpe youHi, how can a helpe youHi, how can a helpe youHi, how
+                can a helpe youHi, how can a helpe youHi, how can a helpe youHi,
+                how can a helpe youHi, how can a helpe youHi, how can a helpe
+                youHi, how can a helpe youHi, how can a helpe youHi, how can a
+                helpe youHi, how can a helpe youHi, how can a helpe youHi, how
+                can a helpe youHi, how can a helpe youHiyouHi, how can a helpe
+                youHi, how can a helpe youHi, how can a helpe youHi, how can a
+                helpe youHi, how can a helpe youHi, how can a helpe youHi, how
+                can a helpe youHi, how can a helpe youHi, how can a helpe youHi,
+                how can a helpe youHi, how can a helpe youHi, how can a helpe
+                youHi, how can a helpe youHiyouHi, how can a helpe youHi, how
+                can a helpe youHi, how can a helpe youHi, how can a helpe youHi
+                you
+              </p>
+            </div> -->
+
+            <!-- test -->
+            <!-- <div class="massames">
+              <small class="user">FA</small>
+              <p class="user-text">
+                , how can a helpe youHi, how can, how can a helpe youHi, how
+                can, how can a helpe youHi, how can, how can a helpe youHi, how
+                can, how can a helpe youHi, how can, how can a helpe youHi, how
+                can, how can a helpe youHi, how canHican, how can a helpe youHi,
+                how can, how can a helpe youHi, how can, how can a helpe youHi,
+                how canHican, how can a helpe youHi, how can, how can a helpe
+                youHi, how can, how can a helpe youHi, how canHican, how can a
+                helpe youHi, how can, how can a helpe youHi, how can, how can a
+                helpe youHi, how canHican, how can a helpe youHi, how can, how
+                can a helpe youHi, how can, how can a helpe youHi, how canHican,
+                how can a helpe youHi, how can, how can a helpe youHi, how can,
+                how can a helpe youHi, how canHican, how can a helpe youHi, how
+                can, how can a helpe youHi, how can, how can a helpe youHi, how
+                canHican, how can a helpe youHi, how can, how can a helpe youHi,
+                how can, how can a helpe youHi, how canHican, how can a helpe
+                youHi, how can, how can a helpe youHi, how can, how can a helpe
+                youHi, how canHican, how can a helpe youHi, how can, how can a
+                helpe youHi, how can, how can a helpe youHi, how canHi
+              </p>
+            </div> -->
+          </div>
+
+          <form class="chat-input">
+            <input
+              type="text"
+              placeholder="Send massage..."
+              id="massage-input"
+            />
+            <div class="header-icon caridet-p">
+              <p>10/ <span class="cridate-count">10</span></p>
+            </div>
+            <button class="type">GPT-3.5 ></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section of login -->
+
+    <!-- ********************************** -->
+    <section class="login">
+      <!-- header ********************** -->
+      <header class="header">
+        <img src="../1 image/logo-no-background-frist.svg" alt="farhadGPT" />
+
+        <div class="hero-login">
+          <div class="icon">
+            <ion-icon
+              name="sunny-outline"
+              class="icon-light icon-active"
+            ></ion-icon>
+            <ion-icon name="moon-outline" class="incon-dark"></ion-icon>
+          </div>
+          <button class="try">Try farhadGPT for free</button>
+        </div>
+      </header>
+
+      <!-- **************************** -->
+      <div class="login-conatiner">
+        <div class="login-image">
+          <img src="../1 image/chat/login-image.webp" alt="" />
+        </div>
+        <div class="login-form">
+          <ion-icon name="person-outline" class="user-icon"></ion-icon>
+          <h2>Welcom back</h2>
+          <small id="error-login"></small>
+          <form>
+            <input type="text" placeholder="Name" id="name" />
+            <input type="password" placeholder="Password" id="password" />
+            <button type="submit" class="login-button" id="login">
+              Log in
+            </button>
+          </form>
+          <small class="sparited">or</small>
+          <br />
+          <button class="login-google">
+            <strong>🧺</strong>
+            Sign in with google
+          </button>
+          <p>or <a href="#">Create new accout</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ********************* -->
+
+    <!-- link of icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

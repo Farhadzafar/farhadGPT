@@ -1,0 +1,364 @@
+:root {
+  --color-primeri-light: #3b83f656;
+  --color-primeri: #8a50e6;
+  --color-primeri-dark: #39107a;
+  --color-title-text: #101010;
+  --color-smal-text: #444141;
+  --color-sction: #8c5dd810;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-primeri);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primeri-dark);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  overflow: hidden;
+  background-color: var(--color-primeri-light);
+}
+
+/* ----------- genral style --------------- */
+ul li {
+  list-style: none;
+}
+
+button {
+  background-color: var(--color-primeri);
+  border: none;
+  border-radius: 25px;
+  color: #dadada;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.8rem 1.6rem;
+  transition: all 0.2s linear;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+button:active {
+  transform: translatey(2px);
+  opacity: 1;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: var(--color-smal-text);
+}
+
+p {
+  font-size: 1.7;
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+  word-wrap: break-word;
+  word-spacing: -1.2px;
+  color: var(--color-smal-text);
+}
+
+/* ************** caht section ************* */
+.chat {
+  width: 100%;
+  display: none;
+}
+
+.chat header {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.7rem;
+}
+
+.header-icon ion-icon {
+  width: 3rem;
+  height: 3rem;
+}
+.header-icon ion-icon:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+/* ******** coantiner ********** */
+.chat-coantiner {
+  width: 100%;
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  height: 90vh;
+  padding: 0 2rem 2rem 2rem;
+}
+.sidebar button {
+  margin-left: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+.chat-dscription {
+  width: 100%;
+  height: 75vh;
+  position: relative;
+}
+
+.sidebar ul li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.sidebar ul li img {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+.setting {
+  width: 100%;
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  border-top: 1px solid var(--color-primeri-dark);
+  padding-top: 2rem;
+}
+.setting ul li ion-icon {
+  width: 2.3rem;
+  height: 3.3rem;
+}
+
+/* ********************** */
+/* chat area */
+/* ********************** */
+.chat-area {
+  position: relative;
+  width: 78%;
+  height: 80vh;
+  background-color: #fff;
+  border-radius: 9px;
+  overflow-x: hidden;
+  padding: 1.5rem 3rem 3rem 3rem;
+}
+
+.hellow {
+  text-align: center;
+  padding: 3rem 0;
+}
+.hellow img {
+  width: 9rem;
+}
+.servise-coantiner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.servise-botton {
+  width: 22rem;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primeri-light);
+  border-radius: 9px;
+  margin-top: 2rem;
+}
+
+.servise-botton:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.servise-botton img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+  color: var(--color-primeri-dark);
+}
+
+/* input of text */
+.chat-input {
+  width: 78%;
+  height: 7rem;
+  position: fixed;
+  bottom: 2rem;
+  left: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.chat-input input {
+  position: absolute;
+  left: 16.9rem;
+  /* top: 1rem; */
+  width: 73%;
+  border-radius: 25px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 2px solid #9f9fafb6;
+  font-size: 1.9rem;
+  color: var(--color-smal-text);
+  padding: 0.9rem 6.5rem 0.8rem 1.5rem;
+  background-color: #9f9faf3f;
+  outline: none;
+}
+
+input:focus {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.hidden {
+  display: none;
+}
+
+/* user and farhadGPT chat style */
+
+.massage-area {
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.massames {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.massames .user {
+  padding: 1rem;
+  background-color: var(--color-primeri-light);
+  color: #fff;
+  border-radius: 25px;
+}
+.massames .user-text {
+  padding: 1.2rem 0 1.5rem 0;
+  color: #222225;
+  word-wrap: break-word;
+}
+
+/* Ai caht */
+.AI-image {
+  width: 4rem;
+  height: 4rem;
+}
+.AI-text {
+  padding: 1.5rem;
+  color: #000074;
+  background-color: #3491ff17;
+  border-radius: 25px;
+  border-top-left-radius: 0;
+  margin: 2rem 0;
+}
+
+.caridet-p {
+  position: absolute;
+  right: 2%;
+}
+.type {
+  position: absolute;
+  left: 4.2rem;
+  bottom: 1.8rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 2px solid var(--color-primeri);
+}
+
+/* media qurey */
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 55%;
+  }
+  .caridet-p {
+    position: absolute;
+    right: 2%;
+  }
+  p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  p {
+    font-size: 2.4rem;
+  }
+  .chat-input {
+    bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .chat-area {
+    width: 100%;
+  }
+  .chat-input {
+    bottom: 3.8rem;
+    width: 100%;
+    left: 0;
+  }
+  .caridet-p {
+    position: absolute;
+    right: 2%;
+  }
+  .sidebar {
+    display: none;
+    position: absolute;
+    top: 37px;
+    left: 0;
+    z-index: 4343;
+    background-color: var(--color-primeri-light);
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .caridet-p {
+    position: absolute;
+    right: 2%;
+  }
+}
+@media screen and (max-width: 570px) {
+  html {
+    font-size: 45%;
+  }
+  .caridet-p {
+    position: absolute;
+    right: 2%;
+  }
+}
